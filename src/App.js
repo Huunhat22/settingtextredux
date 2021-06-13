@@ -1,0 +1,75 @@
+// import React from 'react';
+import Settingsize from './component/Settingsize';
+import Colorpicking from './component/Colorpicking';
+import Result from './component/Result';
+// import logo from './logo.svg';
+// import { Counter } from './features/counter/Counter';
+// import './App.css';
+import './../src/css/style.css'
+import React from 'react';
+
+function App () {
+  
+  return (
+    <div className="App">
+      <div className="container mt-5">
+        <div className="row">
+          <Colorpicking></Colorpicking>
+          <Settingsize></Settingsize>
+        </div>
+        <div className="row mt-5">
+          <Result></Result>
+        </div>
+        
+      </div>
+
+      {/* <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <Counter />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <span>
+          <span>Learn </span>
+          <a
+            className="App-link"
+            href="https://reactjs.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            React
+          </a>
+          <span>, </span>
+          <a
+            className="App-link"
+            href="https://redux.js.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Redux
+          </a>
+          <span>, </span>
+          <a
+            className="App-link"
+            href="https://redux-toolkit.js.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Redux Toolkit
+          </a>
+          ,<span> and </span>
+          <a
+            className="App-link"
+            href="https://react-redux.js.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            React Redux
+          </a>
+        </span>
+      </header> */}
+    </div>
+  );
+}
+
+export default App;
